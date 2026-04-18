@@ -65,3 +65,38 @@
   top: 0;
   color: rgb(211, 211, 211);
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  background-color: lightgreen;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+.responsive-box {
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+/* Pieni näyttö (puhelin) */
+@media (max-width: 600px) {
+  .responsive-box {
+    background-color: lightcoral;
+  }
+}
+
+/* Isompi näyttö */
+@media (min-width: 601px) {
+  .responsive-box {
+    background-color: lightseagreen;
+  }
+}
