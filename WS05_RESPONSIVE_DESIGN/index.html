@@ -12,12 +12,12 @@
     }
 
     h1 {
-      color: rgb(128, 0, 38);
+      color: rgb(128, 0, 92);
       font-size: 2em;
     }
 
     p {
-      color: blue;
+      color: rgb(233, 80, 159);
     }
 
     .content-box {
@@ -33,10 +33,16 @@
 
   <header>
     <h1>Welcome to my Page</h1>
-    <nav>
-      <a href="#about">About</a> |
-      <a href="#lists">Lists</a> |
-      <a href="#contact">Contact</a>
+    
+      <nav class="responsive-nav">
+  <button class="menu-toggle">☰ Menu</button>
+
+  <ul class="nav-list">
+    <li><a href="#about">About</a></li>
+    <li><a href="#lists">Lists</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
     </nav>
   </header>
 
@@ -44,7 +50,8 @@
 
     <section id="about">
       <p>This is a paragraph.</p>
-      <img src="images/Shadiya_kuva.jpg" alt="Kuva" class="filter-image">
+      <img src="images/Shadiyan_kuva.jpg" alt="Kuva" class="filter-image">
+        <img src="images/safarikuva.jpg" alt="Safari kuva" class="responsive-image">
 
       <div class="content-box">
         <h3>Sample Heading</h3>
@@ -127,12 +134,19 @@
 <section>
   <h2>Responsive Design</h2>
 
-  <div class="responsive-box">
+  <div class="media-query-box">
     Resize the window to see the effect
   </div>
 </section>
   </main>
+<section>
+  <h2>Responsive Layout</h2>
 
+  <div class="responsive-container">
+    <div class="column">Column 1</div>
+    <div class="column">Column 2</div>
+  </div>
+</section>
   <footer>
     <p>&copy; 2025 Shadiyan oma verkkosivu</p>
   </footer>

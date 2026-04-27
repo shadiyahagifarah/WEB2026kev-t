@@ -1,5 +1,5 @@
 .transition-button {
-  background-color: lightblue;
+  background-color: rgb(202, 68, 184);
   padding: 10px 20px;
   border: none;
   cursor: pointer;
@@ -12,7 +12,7 @@
 .animation-box {
   width: 50px;
   height: 50px;
-  background-color: lightgreen;
+  background-color: rgb(199, 55, 165);
   position: relative;
   animation: move 2s infinite alternate;
 }
@@ -72,7 +72,7 @@
 }
 
 .grid-item {
-  background-color: lightgreen;
+  background-color: rgb(114, 72, 101);
   padding: 20px;
   text-align: center;
   font-weight: bold;
@@ -97,7 +97,7 @@
 /* Isompi näyttö */
 @media (min-width: 601px) {
   .responsive-box {
-    background-color: lightseagreen;
+    background-color: rgb(196, 67, 191);
   }
   .transition-button {
   background-color: rgb(230, 173, 218);
@@ -109,3 +109,61 @@
 
 }
 .box { background-color: rgb(230, 173, 204); padding: 20px; text-align: center; }
+.responsive-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1 1 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #e2e2e2;
+  border: 1px solid #999;
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 1 1 100%;
+  }
+}
+.filter-image {
+  width: 300px;
+  height: auto;
+  display: block;
+}
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+
+  max-height: 400px; 
+  object-fit: cover; 
+}
+  .media-query-box {
+  padding: 20px;
+  text-align: center;
+}
+.responsive-nav .nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .responsive-nav .nav-list {
+    display: none;
+  }
+
+  .responsive-nav .menu-toggle {
+    display: block;
+  }
+}
+h1 {
+  color: rgb(244, 78, 208);
+  font-size: 2em;
+}

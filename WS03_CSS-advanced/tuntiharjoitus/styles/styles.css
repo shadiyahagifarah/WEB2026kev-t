@@ -1,5 +1,5 @@
 .transition-button {
-  background-color: lightblue;
+  background-color: rgb(230, 173, 215);
   padding: 10px 20px;
   border: none;
   cursor: pointer;
@@ -12,7 +12,7 @@
 .animation-box {
   width: 50px;
   height: 50px;
-  background-color: lightgreen;
+  background-color: rgb(238, 144, 205);
   position: relative;
   animation: move 2s infinite alternate;
 }
