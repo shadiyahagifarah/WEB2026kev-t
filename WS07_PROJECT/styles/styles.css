@@ -180,11 +180,11 @@ body {
 
   border-radius: 25px;
 
-  background: light grey(215, 31, 178, 0.1);
+  background: rgba(215, 31, 178, 0.1);
 
   backdrop-filter: blur(15px);
 
-  border: 1px solid pink(227, 86, 175, 0.2);
+  border: 1px solid rgba(227, 86, 175, 0.2);
 
   box-shadow:
     0 20px 50px rgba(215, 134, 222, 0.5);
@@ -206,7 +206,7 @@ body {
 
   margin: 0 auto 20px;
 
-  filter: dropshadow(0 20px 25px pink(0,0,0,0.6));
+  filter: drop-shadow(0 20px 25px rgba(0,0,0,0.6));
 
   transition: 0.4s;
 }
